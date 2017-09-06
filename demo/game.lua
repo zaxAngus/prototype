@@ -1,0 +1,1 @@
+game = g_class()
