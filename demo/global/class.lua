@@ -2,7 +2,7 @@ local _class={}
 function class(super)
 	local class_type={}
 	class_type.ctor=false
-	class_type.super=super
+	class_type.super=require
 	class_type.new=function(...) 
 			local obj={}
 			do
@@ -16,7 +16,7 @@ function class(super)
 					end
 				end
 				create(class_type,...)
-			end
+			end 
 			setmetatable(obj,{ __index=_class[class_type] })
 			return obj
 		end
