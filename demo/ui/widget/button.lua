@@ -1,8 +1,8 @@
 local base = require "ui.widget.base" 
 local mt = class(base)
-function mt:ctor()
+function mt:ctor(func)
     --逻辑函数
-    self.logic = nil
+    self.logic = func
     --美术素材
     self.anim_focus = {}
     self.anim_nofocus = {}

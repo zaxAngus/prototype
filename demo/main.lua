@@ -49,6 +49,7 @@ function love.run()
 	end
 end
 function love.load()
+	G.ui_stack = require"ui.stack"
 	game = game.new()
 	game:load()
 end
