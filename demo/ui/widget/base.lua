@@ -10,8 +10,9 @@ function mt:ctor(x,y,w,h,parent)
         self.x = x
         self.y = y
     end
-        self.w = w
-        self.h = h
+
+    self.w = w
+    self.h = h
 end
 function mt:update()
 
