@@ -1,4 +1,4 @@
-local ui_stack = require"ui.ui_stack"
+local ui_stack = require"ui.stack"
 local mt = class()
 function mt:ctor()
 end
